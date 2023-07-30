@@ -1,0 +1,16 @@
+.underline {
+    position: relative;
+    display: inline-block; 
+    text-transform: uppercase;
+}
+
+.underline:before {
+    position: absolute;
+    height: 5px;
+    width: 80%;
+    left: 10%;
+    bottom: -8px;
+    background: var(--primary);
+    display: block;
+    content: "";
+}

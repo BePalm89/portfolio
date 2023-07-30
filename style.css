@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+	font-family: 'Raleway', sans-serif;
+	--white: #FFFFFF;
+	--gray: #b0adad;
+	--secondary: #609EA2;
+	--primary: #C92C6D;
+	--black-1: #343333;
+	--black-2: #0B0B0B;
+	--black-3: #0F0F0F;
+	--header-height: 3.4rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+    font-family: var(--font-family);
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    'aside main';
+	height: 100%;
+}
+
+header {
+	grid-area: header;
+	display: none;
+}
+
+aside {
+	grid-area: aside;
+	background-color: var(--black-1);
+	color: var(--white);
+}
+
+main {
+	grid-area: main;
+	background-color: var(--black-3);
+}
+
+.padding-left-small {
+	padding-left: 0.25rem;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.text-with-border-left-gray {
+	border-left: 1px solid var(--gray);
+	color: var(--gray);
+}
+
+.text-with-border-left-primary {
+	border-left: 1px solid var(--primary);
+}
+
+.text-with-border-left-secondary {
+	border-left: 1px solid var(--secondary);
+}
+
+
+@media (max-width: 834px) {
+
+	.wrapper {
+		grid-template-rows: auto 1fr;
+        grid-template-areas: 
+        'header header'
+        'main main'
+        ;
+    }
+
+	header {
+		display: block;
+	}
+
+    aside {
+        position: fixed;
+        left: 0;
+        top: calc(var(--header-height));
+        height: 100vh;
+        width: 0;
+        z-index: 100;
+        overflow: hidden;
+        transition: width 0.3s ease-in-out;
+    }
+}
+

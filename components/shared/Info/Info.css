@@ -1,0 +1,43 @@
+.info-container {
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.info-icon {
+    display:inline-block;
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+    line-height: 36px;
+    background-color: var(--primary);
+    text-align: center;
+    border-radius: 100%;
+    color: var(--white); 
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    gap:4px
+}
+
+.info-text p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.info-text p:last-of-type {
+    color: var(--gray);
+    font-size: 12px;
+    font-weight: 400;
+}
+
