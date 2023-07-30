@@ -28,8 +28,3 @@ export const playAnimation = (typingElement) => {
     isAdding ? 120 : 80
   );
 };
-
-export const setTitlePage = (title, container) => {
-  const titleComponent = Title(title);
-  container.innerHTML = titleComponent;
-};

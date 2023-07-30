@@ -1,9 +1,11 @@
 import "./About.css";
-import { setTitlePage } from "../../../utils/utils";
 import Info from "../../shared/Info/Info";
+import Title from "../../shared/Title/Title";
 
-const template = () => {
+const About = () => {
   return `
+  <div class="about-container"> 
+  ${Title("about me")}
   <div class="description-container">
     <div class="description-text">
         <h3>Claudia Palmerini</h3>
@@ -42,18 +44,8 @@ const template = () => {
       <p class="padding-left-small bold text-with-border-left-secondary">on social network</p>
     </div>
   </div>
+  </div>
   `;
-};
-
-const About = () => {
-  const aboutContainer = document.createElement("div");
-  aboutContainer.classList.add("about-container");
-
-  setTitlePage("About me", aboutContainer);
-
-  aboutContainer.innerHTML += template();
-
-  return aboutContainer.outerHTML;
 };
 
 export default About;
