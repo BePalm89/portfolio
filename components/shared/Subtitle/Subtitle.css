@@ -1,0 +1,12 @@
+.text-with-border-left-gray {
+	border-left: 1px solid var(--gray);
+	color: var(--gray);
+}
+
+.text-with-border-left-primary {
+	border-left: 1px solid var(--primary);
+}
+
+.text-with-border-left-secondary {
+	border-left: 1px solid var(--secondary);
+}

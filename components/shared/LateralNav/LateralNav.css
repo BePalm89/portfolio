@@ -110,12 +110,12 @@ footer p {
 
     aside {
         display: none;
-        
     }
 
     aside.open {
         display: block;
         width: 315px;
+        transition: width 0.3s ease-in-out;
     }
 
     .aside-container {

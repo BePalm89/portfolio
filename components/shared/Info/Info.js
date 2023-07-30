@@ -1,7 +1,6 @@
 import "./Info.css";
-import infoData from "./data";
 
-const Info = () => {
+const Info = (infoData) => {
   console.log(infoData);
   return `
     <div class="info-container">

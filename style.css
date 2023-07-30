@@ -54,6 +54,7 @@ aside {
 main {
 	grid-area: main;
 	background-color: var(--black-3);
+	padding: 3rem;
 }
 
 .padding-left-small {
@@ -62,19 +63,6 @@ main {
 
 .bold {
 	font-weight: 700;
-}
-
-.text-with-border-left-gray {
-	border-left: 1px solid var(--gray);
-	color: var(--gray);
-}
-
-.text-with-border-left-primary {
-	border-left: 1px solid var(--primary);
-}
-
-.text-with-border-left-secondary {
-	border-left: 1px solid var(--secondary);
 }
 
 
@@ -100,7 +88,10 @@ main {
         width: 0;
         z-index: 100;
         overflow: hidden;
-        transition: width 0.3s ease-in-out;
     }
+
+	main {
+		padding-top: calc(3rem + var(--header-height));
+	}
 }
 
