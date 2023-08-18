@@ -11,7 +11,7 @@ const hobbies = [
 
 const Hobbies = () => {
   return `
-  <div class="hobbies-container">
+  <div class="primary-container">
   ${Subtitle("What I do", "in my free time", "primary")}
     <div class="hobbies-img-container">
     ${hobbies

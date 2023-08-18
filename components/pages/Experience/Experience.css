@@ -1,0 +1,47 @@
+.experience-container {
+    color: var(--white);
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-container {
+    margin-top: 4rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.work-skills {
+    min-width: 60%;
+}
+
+.lang-skills {
+    flex: 1;
+}
+
+
+@media (max-width: 1000px) {
+    .skills-container {
+        flex-direction: column;
+    } 
+}
+
+@media (max-width: 834px) {
+
+    .experience-container {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .experience-container {
+        padding: 3rem 1rem;
+    }
+}

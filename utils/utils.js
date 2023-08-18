@@ -1,5 +1,3 @@
-import Title from "../components/shared/Title/Title";
-
 const textToDisplay = "Frontend Engineer";
 let index = 0;
 let isAdding = true;

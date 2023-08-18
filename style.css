@@ -32,6 +32,10 @@ ul {
 	list-style: none;
 }
 
+button {
+    font-family: var(--font-family);
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 315px 3fr;
@@ -54,7 +58,6 @@ aside {
 main {
 	grid-area: main;
 	background-color: var(--black-3);
-	padding: 3rem;
 }
 
 .padding-left-small {
@@ -65,6 +68,73 @@ main {
 	font-weight: 700;
 }
 
+.primary-container {
+    flex: 4;
+    padding: 2rem;
+    background-color: var(--black-1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+  
+.primary-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 20%;
+    border-top: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
+}
+
+.primary-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: 20%;
+    border-bottom: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+}
+
+.align-text-left {
+	text-align: left;
+}
+
+.secondary-container {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--black-1);
+    position: relative;
+}
+
+.secondary-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 20%;
+    border-top: 2px solid var(--secondary);
+    border-left: 2px solid var(--secondary);
+}
+  
+.secondary-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: 20%;
+    border-bottom: 2px solid var(--secondary);
+    border-right: 2px solid var(--secondary);
+}
+
+.mg-top {
+    margin-top: 3rem;
+}
 
 @media (max-width: 834px) {
 

@@ -9,13 +9,13 @@ import SocialNetwork from "../../shared/SocialNetwork/SocialNetwork";
 const About = () => {
   return `
   <div class="about-container"> 
-  ${Title("about me")}
-  ${Description()}
-  ${Info(infoData)}
-  <div class="more-info-container">
-    ${Hobbies()}
-    ${SocialNetwork()}
-  </div>
+    ${Title("about me")}
+    ${Description()}
+    ${Info(infoData)}
+    <div class="more-info-container">
+      ${Hobbies()}
+      ${SocialNetwork()}
+    </div>
   </div>
   `;
 };

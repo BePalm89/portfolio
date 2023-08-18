@@ -4,12 +4,14 @@
     justify-content: space-between;
     text-align: left;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .info-box {
     display: flex;
     align-items: center;
     gap:8px;
+    padding: 1rem 0rem;
 }
 
 .info-icon {
@@ -41,3 +43,9 @@
     font-weight: 400;
 }
 
+@media (max-width: 600px) {
+    .info-container {
+        flex-direction: column;
+        align-items:flex-start;
+    }
+}

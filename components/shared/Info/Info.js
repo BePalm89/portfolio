@@ -1,7 +1,6 @@
 import "./Info.css";
 
 const Info = (infoData) => {
-  console.log(infoData);
   return `
     <div class="info-container">
         ${infoData

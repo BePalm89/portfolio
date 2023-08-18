@@ -11,9 +11,11 @@ router();
 addListeners();
 
 // Typing animation
-const [aside, main] = document.querySelectorAll(".typing");
-playAnimation(aside);
-//playAnimation(main);
+document.addEventListener("DOMContentLoaded", () => {
+  const [p, h2] = document.querySelectorAll(".typing");
+  playAnimation(p);
+  playAnimation(h2);
+});
 
 //Opend and close laterl nav bar for desktop and mobile
 const burgerMenuElement = document.querySelector(".header-container div");

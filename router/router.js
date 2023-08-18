@@ -49,7 +49,7 @@ export const router = () => {
   }
 };
 
-window.addEventListener("popstate", router); // Check what is a popstate event
+window.addEventListener("popstate", router);
 
 document.addEventListener("DOMContentLoaded", router);
 

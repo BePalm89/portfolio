@@ -1,0 +1,10 @@
+.contact-container {
+    text-align: center;
+    padding: 3rem;
+    color: var(--white);
+}
+
+.contact-info {
+    text-align: left;
+    margin-bottom: 1rem;
+}

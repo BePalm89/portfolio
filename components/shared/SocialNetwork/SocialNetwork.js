@@ -4,7 +4,7 @@ import Subtitle from "../Subtitle/Subtitle";
 
 const SocialNetwork = () => {
   return `
-  <div class="social-container">
+  <div class="secondary-container">
     ${Subtitle("Whare you can find me", "on social network", "secondary")}
     <div class="social-network-container">
         ${socialNetworkData

@@ -26,7 +26,7 @@
     gap: 2rem;
 }
 
-.cta button {
+.btn-primary {
     background-color: var(--primary);
     padding: 8px 16px;
     border: none;
@@ -36,11 +36,11 @@
     transition: .2s ease-in-out 0s;
 }
 
-.cta i {
+.btn-primary i {
     margin-right: 8px;
 }
 
-.cta button:hover {
+.btn-primary:hover {
     transform: scale(1.1);
 }
 
