@@ -11,7 +11,7 @@ export const playAnimation = (typingElement) => {
         index++;
         if (index > textToDisplay.length) {
           isAdding = false;
-          setTimeout(() => playAnimation(typingElement), 1000);
+          setTimeout(() => playAnimation(typingElement), 10000);
           return;
         }
       } else {

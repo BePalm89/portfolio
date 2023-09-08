@@ -4,6 +4,7 @@ import Experience from "../components/pages/Experience/Experience";
 import Projects from "../components/pages/Projects/Projects";
 import Contact from "../components/pages/Contact/Contact";
 import NotFound from "../components/shared/NotFound/NotFound";
+import { playAnimation } from "../utils/utils";
 
 const routes = [
   {
@@ -35,7 +36,13 @@ export const router = () => {
   const asideElement = document.querySelector("aside");
 
   if (component) {
+    console.log(component);
     document.querySelector("main").innerHTML = component();
+
+    const [p, h2] = document.querySelectorAll(".typing");
+    playAnimation(p);
+    path === "/" && playAnimation(h2);
+
     navLinks.forEach((link) => {
       link.parentNode.classList.remove("active");
     });
